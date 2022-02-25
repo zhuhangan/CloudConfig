@@ -4,6 +4,7 @@ docker run -d \
   -e PGID=0 \
   -e TZ="Asia/Shanghai" \
   -p 5212:5212 \
+  --network my-network \
   --restart=unless-stopped \
   -v $PWD/cloudreve/uploads:/cloudreve/uploads \
   -v $PWD/cloudreve/config:/cloudreve/config \
