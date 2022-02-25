@@ -5,7 +5,7 @@ docker run -d \
     -e PUID=1000 \
     -e PGID=1000 \
     -e RPC_SECRET=<SECRET> \
-    -p 6800:6800 \ #1
+    -p 6800:6800 \
     -p 6888:6888 -p 6888:6888/udp \
     --network my-network \
     -v $PWD/config:/config \
