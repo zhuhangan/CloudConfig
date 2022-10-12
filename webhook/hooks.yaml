@@ -1,0 +1,18 @@
+- id: deploy
+  execute-command: /data/webhook/git-pull.sh
+  command-working-directory: /data/webhook
+  response-message: Receive request!
+  trigger-rule:
+    and:
+      - match:
+          type: value
+          value: refs/heads/feature/2.0UI
+          parameter:
+            source: payload
+            name: ref
+      - match:
+          type: value
+          value: [自定义值]
+          parameter:
+            source: header
+            name: X-Gitee-Token#!/bin/sh
