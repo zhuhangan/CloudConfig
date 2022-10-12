@@ -15,4 +15,4 @@
           value: [自定义值]
           parameter:
             source: header
-            name: X-Gitee-Token#!/bin/sh
+            name: X-Gitee-Token
